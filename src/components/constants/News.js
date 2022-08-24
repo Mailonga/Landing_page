@@ -1,27 +1,5 @@
-import { face, insta, twitter, linkedin, Coment1, Coment2, Coment3, Coment4 } from "../assets"
+import { face, insta, twitter, linkedin, Coment1, Coment2, Coment3, Coment4, logo_size} from "../assets"
 
-export const navbar = [
-    {
-        id: "home",
-        title: "Home",
-    },
-    {
-        id: "novels",
-        title: "Novels",
-    },
-    {
-        id: "tradutores",
-        title: "Tradutores",
-    },
-    {
-        id: "sobreNos",
-        title: "Sobre Nós",
-    },
-    {
-        id: "contato",
-        title: "Contato",
-    }
-]
 
 export const coments = [
     {
