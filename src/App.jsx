@@ -5,6 +5,7 @@ import About from './components/About';
 import Comentarios from './components/Comentarios';
 
 import Navbar  from './components/Navbar';
+import Tradutores from './components/Tradutores';
 
 export default function App() {
     return (
@@ -13,6 +14,7 @@ export default function App() {
         <Hero/>
         <Novels/>
         <About/>
+        <Tradutores/>
         <Comentarios/>
       </>
     );
