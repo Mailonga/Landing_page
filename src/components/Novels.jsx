@@ -21,9 +21,9 @@ const Novels = () => {
   return (
     <div className='w-full my-10 px-3 font-serif flex flex-col'>
 
-      <div className='max-w-[1240px] mx-auto flex flex-col w-[900px]' >
+      <div className='max-w-[1240px] mx-auto flex flex-col sm:w-full' >
 
-        <div className="p-4 text-xl text-orange-500">
+        <div className="sm:pt-10 text-xl text-orange-500">
           <p>China Antiga</p>
         </div>
         <div className="flex scroll-smooth overflow-x-auto items-center justify-between">
@@ -102,7 +102,7 @@ const Novels = () => {
 
       </div>
 
-      <div className='max-w-[1240px] mx-auto flex flex-col w-[900px]'>
+      <div className='max-w-[1240px] mx-auto flex flex-col sm:w-full'>
         <div className="p-4 text-xl text-orange-500">
           <p>Josei Novels</p>
         </div>
