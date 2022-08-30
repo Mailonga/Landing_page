@@ -3,9 +3,11 @@ import Hero from './components/Hero';
 import Novels from './components/Novels'
 import About from './components/About';
 import Comentarios from './components/Comentarios';
+import Footer from './components/Footer';
 
 import Navbar  from './components/Navbar';
 import Tradutores from './components/Tradutores';
+import Video from './components/Video';
 
 export default function App() {
     return (
@@ -16,6 +18,8 @@ export default function App() {
         <About/>
         <Tradutores/>
         <Comentarios/>
+        <Video/>
+        <Footer/>
       </>
     );
 }

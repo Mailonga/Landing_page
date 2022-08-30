@@ -5,7 +5,7 @@ const HImg2 = require("./assets/H-Img2.webp")
 
 const Hero = () => {
   return (
-    <div className='w-full h-screen bg-orange-100/80 flex flex-col justify-between font-serif'>
+    <div name="Home" className='w-full h-screen bg-orange-100/80 flex flex-col justify-between font-serif'>
       <div className="grid md:grid-cols-2 max-w-[1240px] m-auto">
         <div className='flex flex-col justify-center md:items-start px-2 py-4'>
           <p className='text-2xl sm:mt-2'>Chinese Light Novels</p>

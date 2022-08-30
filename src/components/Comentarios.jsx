@@ -7,7 +7,7 @@ let C4 = require("./assets/Coment4.png")
 
 const Comentarios = () => {
   return (
-    <div className='flex justify-center items-center sm:py-10 py-5 flex-col relative font-serif'>
+    <div name="Comentarios" className='flex justify-center items-center sm:py-10 py-5 flex-col relative font-serif'>
 
       <div />
       

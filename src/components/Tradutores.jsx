@@ -4,7 +4,7 @@ let img2 = require("./assets/Tradutores2.jpg")
 
 const Tradutores = () => {
   return (
-    <div className="flex md:flex-row flex-col bg-red-500/10 md:py-16 sm:px-10 font-serif">
+    <div name="Tradutores" className="flex md:flex-row flex-col bg-red-500/10 md:py-16 sm:px-10 font-serif">
       <div className= "flex-1 flex justify-center items-start flex-col">
         <h2 className='font-bold sm:text-[28px] text-[30px] text-orange-500
         sm:leading-[50px] leading-[60px] w-full'> 

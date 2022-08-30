@@ -1,4 +1,8 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll'
+
+
+
 
 const logo = require("./assets/logo_size.jpg")
 
@@ -12,11 +16,36 @@ const Navbar = () => {
         <div className='flex items-center'>
           <img src={logo} alt="LightNovels" className='w-12 mr-4 p-[3px] xl:w-15' />
           <ul className='hidden md:flex text-orange-300'>
-            <li className='hover:text-white'>Home</li>
-            <li className='hover:text-white'>Novels</li>
-            <li className='hover:text-white'>Tradutores</li>
-            <li className='hover:text-white'>Sobre Nós</li>
-            <li className='hover:text-white'>Contato</li>
+            <li className='hover:text-white cursor-pointer'>
+              <Link to="Home" smooth={true} offset={20} duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className='hover:text-white cursor-pointer'>
+              <Link to="Novels" smooth={true} offset={-50} duration={500}>
+                Novels
+              </Link>
+            </li>
+            <li className='hover:text-white cursor-pointer'>
+              <Link to="Tradutores" smooth={true} offset={-50} duration={500}>
+                Tradutores
+              </Link>
+            </li>
+            <li className='hover:text-white cursor-pointer'>
+              <Link to="About" smooth={true} offset={-60} duration={500}>
+                Sobre Nós
+              </Link>
+            </li>
+            <li className='hover:text-white cursor-pointer'>
+              <Link to="Comentarios" smooth={true} offset={-30} duration={500}>
+                Views
+              </Link>
+            </li>
+            <li className='hover:text-white cursor-pointer '>
+              <Link to="Videos" smooth={true} offset={-80} duration={500}>
+                Teaser
+              </Link>
+            </li>
           </ul>
         </div>
         <div className='hidden md:flex pr-4'>
@@ -30,11 +59,36 @@ const Navbar = () => {
 
 
       <ul className={!nav ? 'hidden' : 'absolute bg-rose-600 w-full px-6 text-center'}>
-        <li className='border-b-2 border-rose-800/90 w-full hover:text-white text-orange-400'>Home</li>
-        <li className='border-b-2 border-rose-800/90 w-full hover:text-white text-orange-400'>Novels</li>
-        <li className='border-b-2 border-rose-800/90 w-full hover:text-white text-orange-400'>Tradutores</li>
-        <li className='border-b-2 border-rose-800/90 w-full hover:text-white text-orange-400'>Sobre Nós</li>
-        <li className='border-b-2 border-rose-800/90 w-full hover:text-white text-orange-400'>Contato</li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="Home" smooth={true} offset={20} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="Novels" smooth={true} offset={-50} duration={500}>
+            Novels
+          </Link>
+        </li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="Tradutores" smooth={true} offset={-50} duration={500}>
+            Tradutores
+          </Link>
+        </li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="About" smooth={true} offset={-60} duration={500}>
+            Sobre Nós
+          </Link>
+        </li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="Comentarios" smooth={true} offset={-30} duration={500}>
+            Views
+          </Link>
+        </li>
+        <li className='hover:text-white cursor-pointer border-b-2 border-rose-800/90 w-full  text-orange-400'>
+          <Link to="Videos" smooth={true} offset={-30} duration={500}>
+            Teaser
+          </Link>
+        </li>
         <div className='my-4'>
           <button className='border-none bg-transparent text-orange-400 mr-4'>Inscreva-se</button>
           <button className='px-4 py-2'>Entrar</button>

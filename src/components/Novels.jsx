@@ -16,7 +16,7 @@ const img11 = require("./assets/RBS-N.jpg")
 
 const Novels = () => {
   return (
-    <div className='w-full my-10 px-3 font-serif flex flex-col'>
+    <div name="Novels" className='w-full my-10 px-3 font-serif flex flex-col'>
 
       <div className='max-w-[1240px] mx-auto sm:w-full' >
 
@@ -124,7 +124,7 @@ const Novels = () => {
             hover:text-orange-800/70">
               <img src={img9} alt="RSWS" className='w-[187px]' />
             </div>
-            <div className=" h-[165px] w-[160px] flex flex-col text-xs justify-between mt-2">
+            <div className=" h-[220px] w-[160px] flex flex-col text-xs justify-between mt-2">
               <span className="px-2 text-orange-500 hover:text-orange-800/70 hover:cursor-pointer">Rebirth to the Sixties With Space</span>
               <span className="px-2 text-orange-500 ">Autor: Yu Ren Mei</span>
               <span className="px-2 text-orange-500 ">Tradutor: Chang'er</span>
